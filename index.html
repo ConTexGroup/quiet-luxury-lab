@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiet Luxury Fashion: Manufacturing Engineering and New Standards in Textiles</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['"Cormorant Garamond"', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        darkBg: '#18181B',
+                        darkSurface: '#222226',
+                        darkCard: '#27272A',
+                        darkElevated: '#303036',
+                        bronze: '#C5A880',
+                        bronzeDark: '#9A7B56',
+                        crimsonMuted: '#E15A51',
+                        emeraldMuted: '#34D399',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #18181B;
+            color: #F4F4F5;
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+        .serif-heading {
+            font-family: 'Cormorant Garamond', serif;
+        }
+        .weave-bg {
+            background-color: #1C1C20;
+            background-image: 
+                radial-gradient(#C5A880 0.65px, transparent 0.65px), 
+                radial-gradient(#3F3F46 0.65px, #1C1C20 0.65px);
+            background-size: 24px 24px;
+            background-position: 0 0, 12px 12px;
+        }
+        input[type=range] {
+            -webkit-appearance: none;
+            appearance: none;
+            background: transparent;
+            cursor: pointer;
+        }
+        input[type=range]::-webkit-slider-runnable-track {
+            background: #3F3F46;
+            height: 8px;
+            border-radius: 999px;
+            border: 1px solid #52525B;
+        }
+        input[type=range]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            margin-top: -7px;
+            background-color: #C5A880;
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            border: 2px solid #18181B;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.6);
+            transition: transform 0.15s ease, background-color 0.15s ease;
+        }
+        input[type=range]::-webkit-slider-thumb:hover {
+            transform: scale(1.18);
+            background-color: #E2C9A6;
+        }
+        .sim-transition {
+            transition: all 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+        .glass-nav {
+            background: rgba(24, 24, 27, 0.92);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        @keyframes pulseSlow {
+            0%, 100% { opacity: 0.45; transform: scale(1); }
+            50% { opacity: 1; transform: scale(1.08); }
+        }
+        .animate-pulse-slow {
+            animation: pulseSlow 3s infinite ease-in-out;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-bronze selection:text-zinc-950">
+
+    <!-- Sticky Navigation -->
+    <header class="sticky top-0 z-50 glass-nav border-b border-zinc-700/80 transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-9 h-9 rounded-lg bg-bronze text-zinc-950 flex items-center justify-center font-serif font-bold text-lg tracking-wider shadow-sm">
+                    QL
+                </div>
+                <span class="font-serif font-semibold text-lg sm:text-xl tracking-tight text-white">
+                    Textile Engineering Lab
+                </span>
+            </div>
+
+            <nav class="hidden md:flex items-center space-x-6 text-sm font-medium text-zinc-300">
+                <a href="#psychology" class="hover:text-bronze transition-colors">Psychology</a>
+                <a href="#wash-lab" class="hover:text-bronze transition-colors">Wash Simulator</a>
+                <a href="#engineering" class="hover:text-bronze transition-colors">3 Pillars &amp; Defects</a>
+                <a href="#comparison" class="hover:text-bronze transition-colors">Matrix</a>
+                <a href="#eu-epr" class="hover:text-bronze transition-colors">EU Standards &amp; EPR</a>
+            </nav>
+
+            <a href="#eu-epr" class="px-4 py-2 rounded-full bg-bronze text-zinc-950 text-xs font-bold tracking-wider uppercase hover:bg-amber-200 transition-colors">
+                EPR Calculator
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative weave-bg border-b border-zinc-700/80 py-16 sm:py-24">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-zinc-800/90 border border-zinc-600 text-xs font-semibold uppercase tracking-widest text-bronze mb-6">
+                <span class="w-2 h-2 rounded-full bg-bronze animate-ping"></span>
+                <span>B2B Technical Whitepaper &amp; Interactive Guide</span>
+            </div>
+            <h1 class="serif-heading text-4xl sm:text-6xl font-bold text-white tracking-tight leading-tight mb-6">
+                Quiet Luxury Fashion: Manufacturing Engineering and New Standards in Textiles
+            </h1>
+            <p class="max-w-3xl mx-auto text-base sm:text-lg text-zinc-200 leading-relaxed mb-10">
+                In everyday and activewear staples such as T-shirts, leggings, hoodies, and sports bras, consumers increasingly prefer understated branding over prominent logos. Bold and loud logos often signal an external need for validation or perceived status; in contrast, minimal design allows fabric quality and personal aesthetics to take center stage. However, without deep textile engineering and technical manufacturing expertise, distinguishing the profound quality gap between two seemingly identical minimalist garments on a rack is nearly impossible.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#wash-lab" class="px-6 py-3.5 rounded-xl bg-bronze text-zinc-950 font-semibold text-sm shadow-md hover:bg-amber-200 transition-all">
+                    Launch Wash &amp; Wear Simulator
+                </a>
+                <a href="#engineering" class="px-6 py-3.5 rounded-xl bg-zinc-800 text-white border border-zinc-600 font-medium text-sm hover:border-bronze transition-all">
+                    Inspect Structural Defects
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 1: Consumer Psychology & Interactive Garment Hotspots -->
+    <section id="psychology" class="py-16 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-6 space-y-6">
+                <span class="text-xs font-bold uppercase tracking-widest text-bronze">01 / Consumer Shift</span>
+                <h2 class="serif-heading text-3xl sm:text-4xl font-bold text-white">
+                    Why Are Consumers Moving Away from Visible Logos?
+                </h2>
+                <p class="text-zinc-300 text-sm sm:text-base">
+                    Click each psychological driver below to inspect how modern buyer expectations translate directly into garment engineering specifications.
+                </p>
+
+                <div class="space-y-3" id="psych-cards">
+                    <div class="p-5 rounded-2xl bg-darkCard border-2 border-bronze shadow-md cursor-pointer transition-all" onclick="selectPsych(0)" id="psych-0">
+                        <div class="flex items-center justify-between mb-1">
+                            <h3 class="font-semibold text-white">1. Evolving Status Signals</h3>
+                            <span class="text-xs px-2.5 py-0.5 rounded-full bg-zinc-900 border border-zinc-700 text-bronze font-medium">Tactile Hand-Feel</span>
+                        </div>
+                        <p class="text-sm text-zinc-300">
+                            Discerning buyers are shifting toward "quiet luxury," preferring refined, logo-free designs where brand identity is communicated purely through fabric hand-feel, drape, and silhouette.
+                        </p>
+                    </div>
+
+                    <div class="p-5 rounded-2xl bg-darkCard border border-zinc-700 hover:border-bronze cursor-pointer transition-all" onclick="selectPsych(1)" id="psych-1">
+                        <div class="flex items-center justify-between mb-1">
+                            <h3 class="font-semibold text-white">2. Focus on Personal Aesthetics</h3>
+                            <span class="text-xs px-2.5 py-0.5 rounded-full bg-zinc-900 border border-zinc-700 text-zinc-300 font-medium">Zero Billboard Effect</span>
+                        </div>
+                        <p class="text-sm text-zinc-300">
+                            Rather than acting as walking billboards for brands, consumers want the garment’s tailoring, drape, and tactile texture to express their own style.
+                        </p>
+                    </div>
+
+                    <div class="p-5 rounded-2xl bg-darkCard border border-zinc-700 hover:border-bronze cursor-pointer transition-all" onclick="selectPsych(2)" id="psych-2">
+                        <div class="flex items-center justify-between mb-1">
+                            <h3 class="font-semibold text-white">3. Conscious Consumption</h3>
+                            <span class="text-xs px-2.5 py-0.5 rounded-full bg-zinc-900 border border-zinc-700 text-zinc-300 font-medium">Anti-Gimmick</span>
+                        </div>
+                        <p class="text-sm text-zinc-300">
+                            Growing awareness against disposable fast fashion is steering consumers away from fleeting marketing gimmicks.
+                        </p>
+                    </div>
+
+                    <div class="p-5 rounded-2xl bg-darkCard border border-zinc-700 hover:border-bronze cursor-pointer transition-all" onclick="selectPsych(3)" id="psych-3">
+                        <div class="flex items-center justify-between mb-1">
+                            <h3 class="font-semibold text-white">4. Authentic Motivation</h3>
+                            <span class="text-xs px-2.5 py-0.5 rounded-full bg-zinc-900 border border-zinc-700 text-zinc-300 font-medium">Longevity &amp; Comfort</span>
+                        </div>
+                        <p class="text-sm text-zinc-300">
+                            Choosing a subtle brand identity shifts purchasing habits away from logo-driven insecurity toward genuine product quality, comfort, and longevity.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interactive Garment Visualizer -->
+            <div class="lg:col-span-6 bg-darkCard rounded-3xl border border-zinc-700 p-6 sm:p-8 shadow-lg">
+                <div class="flex flex-wrap items-center justify-between gap-2 pb-5 mb-6 border-b border-zinc-700">
+                    <div>
+                        <span class="text-xs uppercase tracking-wider text-zinc-400 font-semibold">Interactive CAD Spec</span>
+                        <h3 class="serif-heading text-2xl font-bold text-white" id="garment-title">Heavyweight Compact Hoodie</h3>
+                    </div>
+                    <div class="flex bg-zinc-900 p-1 rounded-xl text-xs font-medium border border-zinc-700">
+                        <button onclick="setGarment('hoodie')" id="btn-hoodie" class="px-3 py-1.5 rounded-lg bg-bronze text-zinc-950 font-semibold transition-all">Hoodie</button>
+                        <button onclick="setGarment('tshirt')" id="btn-tshirt" class="px-3 py-1.5 rounded-lg text-zinc-300 hover:text-white transition-all">T-Shirt</button>
+                        <button onclick="setGarment('leggings')" id="btn-leggings" class="px-3 py-1.5 rounded-lg text-zinc-300 hover:text-white transition-all">Leggings</button>
+                        <button onclick="setGarment('bra')" id="btn-bra" class="px-3 py-1.5 rounded-lg text-zinc-300 hover:text-white transition-all">Sports Bra</button>
+                    </div>
+                </div>
+
+                <!-- Toggle Branding Mode -->
+                <div class="flex items-center justify-between bg-zinc-900 px-4 py-3 rounded-2xl mb-6 border border-zinc-700">
+                    <span class="text-xs font-semibold uppercase tracking-wider text-zinc-300">Visual Branding Mode:</span>
+                    <div class="flex space-x-2">
+                        <button onclick="toggleLogoMode('quiet')" id="mode-quiet" class="px-3 py-1 rounded-lg text-xs font-semibold bg-emerald-700 text-white">
+                            Quiet Luxury (Tone-on-Tone)
+                        </button>
+                        <button onclick="toggleLogoMode('loud')" id="mode-loud" class="px-3 py-1 rounded-lg text-xs font-semibold bg-zinc-800 text-zinc-300 border border-zinc-700">
+                            Fast-Fashion Loud Logo
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Garment SVG Viewport -->
+                <div class="relative h-72 flex items-center justify-center bg-zinc-900 rounded-2xl border border-zinc-700 overflow-hidden">
+                    <svg id="garment-svg" viewBox="0 0 300 260" class="w-64 h-64 sim-transition">
+                        <!-- Dynamic SVG content injected by JS -->
+                    </svg>
+
+                    <!-- Floating Callout Badge -->
+                    <div id="psych-callout" class="absolute bottom-3 left-3 right-3 bg-zinc-950/95 border border-zinc-700 text-zinc-100 p-3.5 rounded-xl text-xs leading-relaxed shadow-lg">
+                        <strong class="text-bronze block mb-0.5" id="callout-title">Long-Staple Compact Surface:</strong>
+                        <span id="callout-desc">High-density double-knit structure communicates status through zero-pilling surface luster and architectural drape—no loud chest logo required.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Interactive Wash & Wear Lifecycle Simulator -->
+    <section id="wash-lab" class="py-16 sm:py-20 bg-darkSurface border-y border-zinc-700/80 text-zinc-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mb-10">
+                <span class="text-xs font-bold uppercase tracking-widest text-bronze">02 / Physical Stress Testing</span>
+                <h2 class="serif-heading text-3xl sm:text-5xl font-bold mt-2 mb-4 text-white">
+                    Interactive Wash Cycle &amp; Degradation Lab
+                </h2>
+                <p class="text-zinc-300 text-sm sm:text-base">
+                    At first glance, both approaches may look similar with their neutral color palettes and absence of visible branding. Drag the wash cycle slider from <strong>Wash 0 (Showroom Rack)</strong> to <strong>Wash 50 (Long-Term Wear)</strong> to observe how short-staple resin-bonded fast fashion breaks down compared to Quiet Luxury engineering.
+                </p>
+            </div>
+
+            <!-- Slider Control Box -->
+            <div class="bg-darkCard border border-zinc-700 rounded-3xl p-6 sm:p-8 mb-10 shadow-lg">
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-4">
+                    <div>
+                        <span class="text-xs uppercase tracking-widest text-zinc-400">Domestic Machine Wash &amp; Dynamic Stress</span>
+                        <div class="text-2xl sm:text-3xl font-serif font-bold text-white">
+                            Cycle Count: <span id="wash-count-label" class="text-bronze">29 Wash Cycles</span>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <button onclick="setWashCycle(0)" class="px-3 py-1.5 rounded-lg bg-zinc-800 hover:bg-zinc-700 border border-zinc-600 text-xs font-medium text-zinc-200">New (0)</button>
+                        <button onclick="setWashCycle(5)" class="px-3 py-1.5 rounded-lg bg-zinc-800 hover:bg-zinc-700 border border-zinc-600 text-xs font-medium text-zinc-200">5 Washes</button>
+                        <button onclick="setWashCycle(15)" class="px-3 py-1.5 rounded-lg bg-zinc-800 hover:bg-zinc-700 border border-zinc-600 text-xs font-medium text-zinc-200">15 Washes</button>
+                        <button onclick="setWashCycle(29)" class="px-3 py-1.5 rounded-lg bg-zinc-800 hover:bg-zinc-700 border border-bronze text-xs font-semibold text-bronze">29 Washes</button>
+                        <button onclick="setWashCycle(50)" class="px-3 py-1.5 rounded-lg bg-bronze text-zinc-950 text-xs font-bold">50 Washes</button>
+                    </div>
+                </div>
+
+                <input id="wash-slider" type="range" min="0" max="50" value="29" class="w-full" oninput="updateWashSimulation(this.value)">
+                <div class="flex justify-between text-[11px] text-zinc-300 mt-2 font-mono">
+                    <span>01: Showroom Identical</span>
+                    <span>05: Resin Wash-Out</span>
+                    <span>15: Torque &amp; Cracking</span>
+                    <span>30: Structural Failure</span>
+                    <span>50: Decade-Grade Benchmark</span>
+                </div>
+            </div>
+
+            <!-- Side-by-Side Garment Specimen Comparison -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Specimen A: Quiet Luxury -->
+                <div class="bg-darkCard border border-emerald-500/40 rounded-3xl p-6 sm:p-8 flex flex-col justify-between shadow-lg">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-3 py-1 rounded-full bg-emerald-950/90 border border-emerald-500/40 text-emerald-300 text-xs font-semibold uppercase tracking-wider">
+                                Quiet Luxury Manufacturing
+                            </span>
+                            <span class="text-xs font-mono text-zinc-300" id="ql-status-badge">Dimensional Stability: 99.4%</span>
+                        </div>
+                        <h3 class="serif-heading text-2xl font-bold text-white mb-2">
+                            Long-Staple Compact Cotton &amp; High-Tenacity Polyamide
+                        </h3>
+                        <p class="text-xs text-zinc-300 mb-6">
+                            Pre-shrunk, enzyme bio-polished, anti-pilling &amp; color-fastness finishes applied as standard.
+                        </p>
+
+                        <!-- Visual SVG Specimen -->
+                        <div class="h-64 bg-zinc-950 rounded-2xl border border-zinc-800 flex items-center justify-center relative overflow-hidden mb-6">
+                            <svg id="ql-shirt-svg" viewBox="0 0 240 220" class="w-56 h-56 sim-transition">
+                                <defs>
+                                    <linearGradient id="qlFabricGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#2E2D2A"/>
+                                        <stop offset="100%" stop-color="#232220"/>
+                                    </linearGradient>
+                                </defs>
+                                <!-- Back neck tape & inner collar -->
+                                <path d="M90,20 Q120,30 150,20 Q135,34 105,34 Z" fill="#1C1B19" stroke="#9A7B56" stroke-width="1"/>
+                                <!-- Architectural Tee Body -->
+                                <path id="ql-shirt-path" d="M60,30 L90,20 C105,32 135,32 150,20 L180,30 L210,70 L185,90 L170,65 L170,195 L70,195 L70,65 L55,90 L30,70 Z" fill="url(#qlFabricGrad)" stroke="#C5A880" stroke-width="2"/>
+                                <!-- Precision Double-Needle Collar Rib -->
+                                <path d="M87,22 C105,36 135,36 153,22" fill="none" stroke="#C5A880" stroke-width="1.2" stroke-dasharray="2,1"/>
+                                <!-- Straight Side Seam & Coverstitch Hem -->
+                                <line x1="74" y1="65" x2="74" y2="195" stroke="#3F3E3A" stroke-width="1"/>
+                                <line x1="166" y1="65" x2="166" y2="195" stroke="#3F3E3A" stroke-width="1"/>
+                                <line x1="70" y1="189" x2="170" y2="189" stroke="#3F3E3A" stroke-width="1" stroke-dasharray="3,1"/>
+                                <!-- Tonal micro logo -->
+                                <rect x="138" y="68" width="14" height="5" rx="1" fill="#3A3835" stroke="#524F4A" stroke-width="0.6"/>
+                            </svg>
+                            <div class="absolute bottom-3 left-3 text-[11px] font-mono text-emerald-300 bg-zinc-900/95 border border-zinc-700 px-2.5 py-1 rounded">
+                                Tonal Micro-Detail Intact • 0° Seam Torque
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Telemetry Metrics -->
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-center">
+                        <div class="bg-zinc-900 p-3 rounded-xl border border-zinc-700">
+                            <div class="text-[11px] text-zinc-300">Shrinkage</div>
+                            <div class="text-base font-bold text-emerald-400" id="ql-shrink">-0.6%</div>
+                        </div>
+                        <div class="bg-zinc-900 p-3 rounded-xl border border-zinc-700">
+                            <div class="text-[11px] text-zinc-300">Surface Pilling</div>
+                            <div class="text-base font-bold text-emerald-400" id="ql-pill">Grade 5 (None)</div>
+                        </div>
+                        <div class="bg-zinc-900 p-3 rounded-xl border border-zinc-700">
+                            <div class="text-[11px] text-zinc-300">Color / Print</div>
+                            <div class="text-base font-bold text-emerald-400" id="ql-color">Zero Bleed</div>
+                        </div>
+                        <div class="bg-zinc-900 p-3 rounded-xl border border-zinc-700">
+                            <div class="text-[11px] text-zinc-300">Seam Integrity</div>
+                            <div class="text-base font-bold text-emerald-400" id="ql-seam">100% Intact</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Specimen B: Fast-Fashion Minimalism (Realistic Wash Degradation Engine) -->
+                <div class="bg-darkCard border border-red-500/40 rounded-3xl p-6 sm:p-8 flex flex-col justify-between shadow-lg">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-3 py-1 rounded-full bg-red-950/90 border border-red-500/40 text-red-300 text-xs font-semibold uppercase tracking-wider">
+                                Fast-Fashion Minimalism
+                            </span>
+                            <span class="text-xs font-mono text-red-300" id="ff-status-badge">Dimensional Stability: 78%</span>
+                        </div>
+                        <h3 class="serif-heading text-2xl font-bold text-white mb-2">
+                            Short-Staple Regenerated Scrap &amp; Resin Finish
+                        </h3>
+                        <p class="text-xs text-zinc-300 mb-6">
+                            Cutting-room waste mechanically shredded and chemically bonded with temporary silicone/resin coating.
+                        </p>
+
+                        <!-- Visual SVG Specimen (Realistic Physical Wear & Tear Simulation) -->
+                        <div class="h-64 bg-zinc-950 rounded-2xl border border-zinc-800 flex items-center justify-center relative overflow-hidden mb-6">
+                            <svg id="ff-shirt-svg" viewBox="0 0 240 220" class="w-56 h-56">
+                                <defs>
+                                    <!-- SVG Turbulence Filter for Surface Fuzz & Resin Loss -->
+                                    <filter id="fuzzFilter" x="-10%" y="-10%" width="120%" height="120%">
+                                        <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3" result="noise"/>
+                                        <feDisplacementMap id="ff-displacement" in="SourceGraphic" in2="noise" scale="0" xChannelSelector="R" yChannelSelector="G"/>
+                                    </filter>
+                                    <!-- Dye Bleed Radial Halo -->
+                                    <radialGradient id="dyeBleedGrad" cx="50%" cy="50%" r="60%">
+                                        <stop offset="0%" stop-color="#44403C" stop-opacity="0.9"/>
+                                        <stop offset="65%" stop-color="#57534E" stop-opacity="0.45"/>
+                                        <stop offset="100%" stop-color="#2A2927" stop-opacity="0"/>
+                                    </radialGradient>
+                                </defs>
+
+                                <!-- Ghost Reference Outline (Original Unwashed Showroom Shape) -->
+                                <path d="M60,30 L90,20 C105,32 135,32 150,20 L180,30 L210,70 L185,90 L170,65 L170,195 L70,195 L70,65 L55,90 L30,70 Z" fill="none" stroke="#52525B" stroke-width="1" stroke-dasharray="3,3" opacity="0.55"/>
+
+                                <g id="ff-garment-group">
+                                    <!-- Dynamic Morphing Shirt Path (Simulates Shrinkage, Asymmetric Spirality, Bacon Neck & Wavy Hem) -->
+                                    <path id="ff-shirt-path" d="M60,30 L90,20 C105,32 135,32 150,20 L180,30 L210,70 L185,90 L170,65 L170,195 L70,195 L70,65 L55,90 L30,70 Z" fill="#2A2927" stroke="#78716C" stroke-width="2" filter="url(#fuzzFilter)"/>
+
+                                    <!-- Armpit & Side Abrasion / Fading Patches -->
+                                    <g id="ff-abrasion-patches" opacity="0">
+                                        <ellipse cx="75" cy="76" rx="12" ry="18" fill="#57534E" opacity="0.45" transform="rotate(-15 75 76)"/>
+                                        <ellipse cx="165" cy="78" rx="13" ry="18" fill="#57534E" opacity="0.45" transform="rotate(15 165 78)"/>
+                                        <ellipse cx="120" cy="145" rx="38" ry="26" fill="#44403C" opacity="0.35"/>
+                                    </g>
+
+                                    <!-- Twisted Side Seams (Torque Spirality Line) -->
+                                    <path id="ff-twisted-seam-left" d="M70,65 Q72,130 70,195" fill="none" stroke="#A8A29E" stroke-width="1.2" stroke-dasharray="2,2" opacity="0"/>
+                                    <path id="ff-twisted-seam-right" d="M170,65 Q168,130 170,195" fill="none" stroke="#A8A29E" stroke-width="1.2" stroke-dasharray="2,2" opacity="0"/>
+
+                                    <!-- Stretched Wavy Collar ("Bacon Neck" Ribbing) -->
+                                    <path id="ff-collar-rib" d="M88,21 C105,34 135,34 152,21" fill="none" stroke="#78716C" stroke-width="2"/>
+
+                                    <!-- Dye Migration Halo Around Chest Print -->
+                                    <ellipse id="ff-bleed-halo" cx="120" cy="80" rx="44" ry="26" fill="url(#dyeBleedGrad)" opacity="0"/>
+
+                                    <!-- Print / Logo Layer that discolors, peels & spider-cracks -->
+                                    <g id="ff-print-group">
+                                        <rect id="ff-print-box" x="92" y="68" width="56" height="24" rx="2" fill="#E7E5E4" opacity="0.95"/>
+                                        <!-- Spider-Web Plastisol Cracking Network -->
+                                        <g id="ff-cracks-network" stroke="#292524" fill="none" opacity="0">
+                                            <path d="M98,68 L108,80 L102,92 M108,80 L121,77 L128,92" stroke-width="1.4"/>
+                                            <path d="M134,68 L127,79 L142,86 L138,92 M121,77 L116,68" stroke-width="1.2"/>
+                                            <path d="M92,76 L104,78 M148,74 L133,78 M112,92 L117,82" stroke-width="1"/>
+                                            <!-- Peeled / Flaked Ink Spots -->
+                                            <polygon points="106,78 111,76 109,82" fill="#292524" stroke="none"/>
+                                            <polygon points="126,81 131,79 129,85" fill="#292524" stroke="none"/>
+                                        </g>
+                                    </g>
+
+                                    <!-- Dense Micro & Macro Pilling Clusters (Short-Staple Fiber Balls) -->
+                                    <g id="ff-pills" opacity="0">
+                                        <!-- Macro Pills -->
+                                        <g fill="#A8A29E">
+                                            <circle cx="85" cy="118" r="1.9"/><circle cx="105" cy="135" r="2.1"/><circle cx="145" cy="125" r="2.2"/>
+                                            <circle cx="120" cy="152" r="2.0"/><circle cx="95" cy="162" r="2.3"/><circle cx="150" cy="158" r="1.9"/>
+                                            <circle cx="110" cy="108" r="1.8"/><circle cx="135" cy="142" r="2.1"/><circle cx="82" cy="148" r="2.0"/>
+                                            <circle cx="76" cy="95" r="1.8"/><circle cx="162" cy="102" r="2.0"/><circle cx="128" cy="118" r="1.7"/>
+                                            <circle cx="92" cy="130" r="1.6"/><circle cx="155" cy="138" r="2.1"/><circle cx="108" cy="168" r="1.9"/>
+                                            <circle cx="138" cy="166" r="2.2"/><circle cx="78" cy="128" r="1.7"/><circle cx="160" cy="120" r="1.8"/>
+                                        </g>
+                                        <!-- Fine Fuzz / Micro-Lints -->
+                                        <g fill="#D6D3D1" opacity="0.8">
+                                            <circle cx="89" cy="112" r="1.1"/><circle cx="101" cy="124" r="1.2"/><circle cx="115" cy="139" r="1.0"/>
+                                            <circle cx="131" cy="129" r="1.2"/><circle cx="148" cy="146" r="1.1"/><circle cx="86" cy="156" r="1.2"/>
+                                            <circle cx="124" cy="163" r="1.1"/><circle cx="142" cy="112" r="1.0"/><circle cx="73" cy="108" r="1.2"/>
+                                            <circle cx="164" cy="112" r="1.1"/><circle cx="99" cy="149" r="1.3"/><circle cx="152" cy="169" r="1.1"/>
+                                            <circle cx="66" cy="78" r="1.3"/><circle cx="173" cy="82" r="1.3"/><circle cx="114" cy="122" r="1.0"/>
+                                        </g>
+                                    </g>
+
+                                    <!-- Unraveling / Loose Hanging Threads & Seam Ruptures -->
+                                    <g id="ff-loose-threads" opacity="0" stroke="#EF4444" fill="none" stroke-width="1.2">
+                                        <!-- Left Armhole & Shoulder Rupture -->
+                                        <path d="M58,32 C52,38 49,44 54,49"/>
+                                        <path d="M68,66 C62,73 65,79 59,84"/>
+                                        <!-- Right Armhole Rupture -->
+                                        <path d="M172,66 C178,72 175,79 182,83"/>
+                                        <!-- Bottom Hem Unraveling Coverstitch Threads -->
+                                        <path d="M84,183 C81,192 86,197 82,204"/>
+                                        <path d="M126,184 C129,193 124,199 128,206"/>
+                                        <path d="M156,180 C160,189 155,195 161,201"/>
+                                    </g>
+                                </g>
+                            </svg>
+                            <div id="ff-warning-banner" class="absolute bottom-3 left-3 right-3 text-[11px] font-mono text-red-300 bg-zinc-900/95 border border-red-500/40 px-2.5 py-1 rounded truncate">
+                                Critical Failure: Torque Twist, Dye Migration &amp; Seam Rupture
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Telemetry Metrics -->
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-center">
+                        <div class="bg-zinc-900 p-3 rounded-xl border border-zinc-700">
+                            <div class="text-[11px] text-zinc-300">Shrink &amp; Torque</div>
+                            <div class="text-base font-bold text-red-400" id="ff-shrink">-11.0% / 6.4°</div>
+                        </div>
+                        <div class="bg-zinc-900 p-3 rounded-xl border border-zinc-700">
+                            <div class="text-[11px] text-zinc-300">Surface Pilling</div>
+                            <div class="text-base font-bold text-red-400" id="ff-pill">Grade 1 (Severe)</div>
+                        </div>
+                        <div class="bg-zinc-900 p-3 rounded-xl border border-zinc-700">
+                            <div class="text-[11px] text-zinc-300">Dye Migration</div>
+                            <div class="text-base font-bold text-red-400" id="ff-color">Cracked &amp; Bled</div>
+                        </div>
+                        <div class="bg-zinc-900 p-3 rounded-xl border border-zinc-700">
+                            <div class="text-[11px] text-zinc-300">Seam Status</div>
+                            <div class="text-base font-bold text-red-400" id="ff-seam">Seam Popping</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: The 3 Core Engineering Pillars & 4 Structural Defects -->
+    <section id="engineering" class="py-16 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-14">
+            <span class="text-xs font-bold uppercase tracking-widest text-bronze">03 / Deep Technical Dissection</span>
+            <h2 class="serif-heading text-3xl sm:text-5xl font-bold text-white mt-2 mb-4">
+                What Sets Quiet Luxury Apart from Fast-Fashion Minimalism?
+            </h2>
+            <p class="text-zinc-300 text-sm sm:text-base">
+                While both feature neutral palettes and minimal logos, their lifecycles, manufacturing standards, and core philosophies are worlds apart across three foundational pillars.
+            </p>
+        </div>
+
+        <!-- 3 Pillars Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+            <!-- Pillar 1 -->
+            <div class="bg-darkCard rounded-3xl p-7 border border-zinc-700 shadow-lg flex flex-col justify-between">
+                <div>
+                    <div class="w-10 h-10 rounded-xl bg-zinc-900 border border-zinc-700 text-bronze font-serif font-bold text-xl flex items-center justify-center mb-5">01</div>
+                    <h3 class="serif-heading text-2xl font-bold text-white mb-4">1. Material and Fabric Quality</h3>
+                    <div class="space-y-4 text-sm">
+                        <div class="p-4 rounded-2xl bg-emerald-950/50 border border-emerald-500/40 text-zinc-200">
+                            <strong class="text-emerald-300 block mb-1">Quiet Luxury:</strong>
+                            Engineered with premium long-staple compact cotton, technical polyamides, and high-tenacity filament yarns. Functional finishes—such as anti-pilling and color-fastness treatments—are applied as standard.
+                        </div>
+                        <div class="p-4 rounded-2xl bg-red-950/50 border border-red-500/40 text-zinc-200">
+                            <strong class="text-red-300 block mb-1">Fast-Fashion Minimalism:</strong>
+                            Relies heavily on low-grade regenerated fabrics made by chemically bonding fabric scraps and cutting-room waste with resins; it merely mimics the minimalist look.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pillar 2 -->
+            <div class="bg-darkCard rounded-3xl p-7 border border-zinc-700 shadow-lg flex flex-col justify-between">
+                <div>
+                    <div class="w-10 h-10 rounded-xl bg-zinc-900 border border-zinc-700 text-bronze font-serif font-bold text-xl flex items-center justify-center mb-5">02</div>
+                    <h3 class="serif-heading text-2xl font-bold text-white mb-4">2. Pattern Making, Tailoring, and Silhouette</h3>
+                    <div class="space-y-4 text-sm">
+                        <div class="p-4 rounded-2xl bg-emerald-950/50 border border-emerald-500/40 text-zinc-200">
+                            <strong class="text-emerald-300 block mb-1">Quiet Luxury:</strong>
+                            Built on architectural pattern drafting and ergonomic body contours, featuring aligned seam lines, reinforced stress points, and an effortless drape.
+                        </div>
+                        <div class="p-4 rounded-2xl bg-red-950/50 border border-red-500/40 text-zinc-200">
+                            <strong class="text-red-300 block mb-1">Fast-Fashion Minimalism:</strong>
+                            Prioritizes marker efficiency (fabric yield) over human anatomy. This approach results in inconsistent sizing, puckered seams, cheap trims, and boxy, ill-fitting cuts designed to fit everyone poorly rather than flattering any silhouette.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pillar 3 -->
+            <div class="bg-darkCard rounded-3xl p-7 border border-zinc-700 shadow-lg flex flex-col justify-between">
+                <div>
+                    <div class="w-10 h-10 rounded-xl bg-zinc-900 border border-zinc-700 text-bronze font-serif font-bold text-xl flex items-center justify-center mb-5">03</div>
+                    <h3 class="serif-heading text-2xl font-bold text-white mb-4">3. Product Lifecycle and Philosophy</h3>
+                    <div class="space-y-4 text-sm">
+                        <div class="p-4 rounded-2xl bg-emerald-950/50 border border-emerald-500/40 text-zinc-200">
+                            <strong class="text-emerald-300 block mb-1">Quiet Luxury:</strong>
+                            Founded on the investment-piece and circularity mindset: "Buy less, wear longer." Garments are crafted to stay in wardrobe rotation for years without degrading.
+                        </div>
+                        <div class="p-4 rounded-2xl bg-red-950/50 border border-red-500/40 text-zinc-200">
+                            <strong class="text-red-300 block mb-1">Fast-Fashion Minimalism:</strong>
+                            Treats minimalism as a disposable micro-trend. It floods the market with cheap minimalist aesthetics designed to be discarded after a few wears.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Technical Inspection Box: 4 Structural Defects of Fast Fashion -->
+        <div class="bg-darkSurface border-2 border-zinc-700 rounded-3xl p-6 sm:p-10 shadow-xl">
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-6 mb-8 border-b border-zinc-700">
+                <div>
+                    <span class="text-xs font-bold uppercase tracking-widest text-red-400">Forensic Lab Callout</span>
+                    <h3 class="serif-heading text-2xl sm:text-3xl font-bold text-white">
+                        Technical Inspection: Structural Defects of Fast Fashion
+                    </h3>
+                </div>
+                <span class="text-xs font-semibold px-3.5 py-1.5 rounded-full bg-red-950/90 border border-red-500/40 text-red-200 self-start md:self-auto">
+                    Disposable &amp; Promotional Grade Classification
+                </span>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-darkCard p-5 rounded-2xl border border-zinc-700 shadow-sm">
+                    <div class="text-xs font-mono text-red-400 font-bold mb-1">DEFECT 01</div>
+                    <h4 class="font-bold text-white mb-2">Weak Tensile Strength</h4>
+                    <p class="text-xs text-zinc-300 leading-relaxed">
+                        Made from short, recycled fiber waste, the fabric lacks mechanical integrity, leading to rapid surface pilling, fiber breakage, and premature tearing.
+                    </p>
+                </div>
+
+                <div class="bg-darkCard p-5 rounded-2xl border border-zinc-700 shadow-sm">
+                    <div class="text-xs font-mono text-red-400 font-bold mb-1">DEFECT 02</div>
+                    <h4 class="font-bold text-white mb-2">Dimensional Instability (Loss of Shape)</h4>
+                    <p class="text-xs text-zinc-300 leading-relaxed">
+                        Inadequate fabric weight (GSM) and unstable knit structures cause severe shrinkage, seam twisting (torque), and bagging after the very first wash.
+                    </p>
+                </div>
+
+                <div class="bg-darkCard p-5 rounded-2xl border border-zinc-700 shadow-sm">
+                    <div class="text-xs font-mono text-red-400 font-bold mb-1">DEFECT 03</div>
+                    <h4 class="font-bold text-white mb-2">Print and Color Migration</h4>
+                    <p class="text-xs text-zinc-300 leading-relaxed">
+                        Inferior printing chemicals and dyes cause surface cracking, peeling, and dye bleeding (color migration) into the print layer over time.
+                    </p>
+                </div>
+
+                <div class="bg-darkCard p-5 rounded-2xl border border-zinc-700 shadow-sm">
+                    <div class="text-xs font-mono text-red-400 font-bold mb-1">DEFECT 04</div>
+                    <h4 class="font-bold text-white mb-2">Seam and Construction Failure</h4>
+                    <p class="text-xs text-zinc-300 leading-relaxed">
+                        Inconsistent stitching with low-tenacity thread under fast production pressure results in broken seams under everyday dynamic stress.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Quick Comparison Matrix -->
+    <section id="comparison" class="py-12 sm:py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="mb-8">
+            <span class="text-xs font-bold uppercase tracking-widest text-bronze">04 / Specification Matrix</span>
+            <h2 class="serif-heading text-3xl sm:text-4xl font-bold text-white mt-1">
+                Quick Comparison: Quiet Luxury vs. Fast-Fashion Approach
+            </h2>
+        </div>
+
+        <div class="overflow-x-auto bg-darkCard rounded-3xl border border-zinc-700 shadow-lg">
+            <table class="w-full text-left border-collapse">
+                <thead>
+                    <tr class="border-b border-zinc-700 bg-zinc-900/90 text-xs uppercase tracking-wider text-zinc-300">
+                        <th class="py-4 px-6 font-bold">Criteria</th>
+                        <th class="py-4 px-6 font-bold text-emerald-400">Quiet Luxury Manufacturing</th>
+                        <th class="py-4 px-6 font-bold text-red-400">Fast-Fashion Approach</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-zinc-700/80 text-sm">
+                    <tr class="hover:bg-zinc-800/60 transition-colors">
+                        <td class="py-4 px-6 font-semibold text-white">Branding &amp; Logo</td>
+                        <td class="py-4 px-6 text-zinc-200">Minimalist, tonal (tone-on-tone), discrete micro-details</td>
+                        <td class="py-4 px-6 text-zinc-300">Large, dominant logos placed primarily for brand exposure and promotion</td>
+                    </tr>
+                    <tr class="hover:bg-zinc-800/60 transition-colors">
+                        <td class="py-4 px-6 font-semibold text-white">Raw Material</td>
+                        <td class="py-4 px-6 text-zinc-200">Long-staple compact cotton, polyamide, advanced finishes</td>
+                        <td class="py-4 px-6 text-zinc-300">Low-grade short staple, resin-bonded textile waste blends</td>
+                    </tr>
+                    <tr class="hover:bg-zinc-800/60 transition-colors">
+                        <td class="py-4 px-6 font-semibold text-white">Lifespan</td>
+                        <td class="py-4 px-6 text-zinc-200">Retains shape, color, and hand-feel for years</td>
+                        <td class="py-4 px-6 text-zinc-300">Loses shape, surface integrity, and fit within a few washes</td>
+                    </tr>
+                    <tr class="hover:bg-zinc-800/60 transition-colors">
+                        <td class="py-4 px-6 font-semibold text-white">Durability</td>
+                        <td class="py-4 px-6 text-zinc-200">High Martindale abrasion and pilling resistance</td>
+                        <td class="py-4 px-6 text-zinc-300">Rapid pilling, seam cracking, and print degradation</td>
+                    </tr>
+                    <tr class="hover:bg-zinc-800/60 transition-colors">
+                        <td class="py-4 px-6 font-semibold text-white">Market Classification</td>
+                        <td class="py-4 px-6 text-emerald-400 font-semibold">Timeless investment apparel</td>
+                        <td class="py-4 px-6 text-red-400 font-semibold">Promotional and disposable-grade garment</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Section 5: EU Regulatory Revolution & Interactive Eco-Modulation (EPR) Calculator -->
+    <section id="eu-epr" class="py-16 sm:py-20 bg-darkSurface border-t border-zinc-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+                <!-- Left Column: EU Regulatory Pillar Cards -->
+                <div class="lg:col-span-6 space-y-6">
+                    <span class="text-xs font-bold uppercase tracking-widest text-bronze">05 / EU Regulatory Mandate</span>
+                    <h2 class="serif-heading text-3xl sm:text-4xl font-bold text-white">
+                        A New Era in Europe: The Environmental and Quality Revolution in Textiles
+                    </h2>
+                    <p class="text-zinc-300 text-sm sm:text-base">
+                        Beyond consumer preference, global regulations are now making this distinction mandatory:
+                    </p>
+
+                    <div class="space-y-4">
+                        <div class="p-5 bg-darkCard rounded-2xl border border-zinc-700 border-l-4 border-l-red-400 shadow-sm">
+                            <h3 class="font-bold text-white text-base mb-1">Fast Fashion Penalized</h3>
+                            <p class="text-sm text-zinc-300">
+                                The European Union is introducing aggressive eco-taxes and levies per unit on low-grade, short-lived apparel.
+                            </p>
+                        </div>
+
+                        <div class="p-5 bg-darkCard rounded-2xl border border-zinc-700 border-l-4 border-l-emerald-400 shadow-sm">
+                            <h3 class="font-bold text-white text-base mb-1">Durability Rewarded</h3>
+                            <p class="text-sm text-zinc-300">
+                                Long-lasting, repairable garments made from high-standard fabrics that pass physical performance tests gain financial and regulatory advantages.
+                            </p>
+                        </div>
+
+                        <div class="p-5 bg-darkCard rounded-2xl border border-zinc-700 border-l-4 border-l-bronze shadow-sm">
+                            <h3 class="font-bold text-white text-base mb-1">Brands Held Directly Accountable</h3>
+                            <p class="text-sm text-zinc-300">
+                                Brands and retailers placing goods on the EU market are directly liable for the end-of-life environmental costs of sub-standard products.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Small Batch Mill Test Report Solution Note -->
+                    <div class="p-5 rounded-2xl bg-zinc-900 border border-zinc-700 text-zinc-200 text-xs leading-relaxed space-y-2">
+                        <div class="text-bronze font-bold uppercase tracking-wider">B2B Compliance Note for 300–1,000 Unit Orders:</div>
+                        <p>
+                            While <strong class="text-white">OEKO-TEX® Standard 100</strong> certifies chemical safety, EU Eco-Modulation (EPR) audits physical durability (Martindale abrasion, pilling, dimensional change). For boutique runs of 300–1,000 units, manufacturers utilize certified <strong class="text-white">Mill Generic Test Reports &amp; Technical Data Sheets (TDS)</strong> from stock-service luxury fabrics—protecting European brands from penalties without costly per-style lab fees.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Right Column: Interactive EU EPR Penalty vs. Bonus Calculator -->
+                <div class="lg:col-span-6 bg-darkCard rounded-3xl border border-zinc-700 p-6 sm:p-8 shadow-xl">
+                    <div class="border-b border-zinc-700 pb-4 mb-6">
+                        <span class="text-xs font-mono uppercase text-bronze font-semibold">Interactive B2B Estimator</span>
+                        <h3 class="serif-heading text-2xl font-bold text-white">
+                            EU Eco-Modulation (Malus / Bonus) Liability Simulator
+                        </h3>
+                        <p class="text-xs text-zinc-300 mt-1">
+                            Simulate annual brand exposure when importing Fast-Fashion vs. Quiet Luxury collections into the European Union.
+                        </p>
+                    </div>
+
+                    <!-- Order Volume Slider -->
+                    <div class="mb-6">
+                        <div class="flex justify-between text-sm font-medium mb-2">
+                            <span class="text-zinc-200">Annual EU Market Volume (Units):</span>
+                            <span class="font-bold text-bronze" id="epr-units-display">2,500 Units</span>
+                        </div>
+                        <input type="range" id="epr-units" min="300" max="20000" step="100" value="2500" class="w-full" oninput="calculateEPR()">
+                        <div class="flex justify-between text-[11px] text-zinc-400 mt-1">
+                            <span>300 (Capsule MOQ)</span>
+                            <span>5,000 Units</span>
+                            <span>10,000 Units</span>
+                            <span>20,000 Units</span>
+                        </div>
+                    </div>
+
+                    <!-- Comparison Result Cards -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+                        <div class="p-4 rounded-2xl bg-red-950/50 border border-red-500/40">
+                            <span class="text-[11px] font-bold uppercase text-red-300">Fast-Fashion Grade (Malus)</span>
+                            <div class="text-2xl font-bold text-red-400 mt-1" id="epr-malus-total">€15,000</div>
+                            <p class="text-[11px] text-zinc-300 mt-1">
+                                Est. €6.00/unit eco-penalty + unsold/returned waste liability &amp; high replacement churn.
+                            </p>
+                        </div>
+
+                        <div class="p-4 rounded-2xl bg-emerald-950/50 border border-emerald-500/40">
+                            <span class="text-[11px] font-bold uppercase text-emerald-300">Quiet Luxury Grade (Bonus)</span>
+                            <div class="text-2xl font-bold text-emerald-400 mt-1" id="epr-bonus-total">€0 Penalty</div>
+                            <p class="text-[11px] text-zinc-300 mt-1">
+                                Verified Mill TDS durability &amp; anti-pilling compliance qualifies for eco-modulation fee reductions.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="p-4 rounded-2xl bg-zinc-900 border border-zinc-700 flex items-center justify-between">
+                        <div>
+                            <div class="text-xs text-zinc-400">Projected Brand Capital Preserved:</div>
+                            <div class="text-xl font-bold text-white" id="epr-savings">€15,000 / Collection</div>
+                        </div>
+                        <span class="px-3 py-1.5 rounded-xl bg-bronze text-zinc-950 text-xs font-bold">
+                            EU EPR Compliant
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conclusion Banner -->
+    <footer class="bg-zinc-950 text-zinc-100 py-16 border-t border-zinc-800">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
+            <div class="w-12 h-12 rounded-2xl bg-bronze text-zinc-950 font-serif font-bold text-2xl flex items-center justify-center mx-auto">
+                QL
+            </div>
+            <blockquote class="serif-heading text-2xl sm:text-4xl font-medium italic text-zinc-100 leading-relaxed">
+                "Minimalism that is merely visual can easily be copied, but it fails the test of technical engineering and legal durability standards. Elevating your collections to meet future market standards requires precise fiber selection, disciplined pattern engineering, and uncompromising manufacturing quality."
+            </blockquote>
+            <p class="text-xs uppercase tracking-widest text-zinc-400 pt-4">
+                Quiet Luxury Fashion • Manufacturing Engineering &amp; New Standards in Textiles
+            </p>
+        </div>
+    </footer>
+
+    <!-- Interactive Script -->
+    <script>
+        let currentGarment = 'hoodie';
+        let currentLogoMode = 'quiet';
+
+        const psychData = [
+            {
+                title: "Long-Staple Compact Surface:",
+                desc: "Discerning buyers recognize quiet luxury through high-density compact yarns, silky hand-feel, and zero surface fuzz—communicating status without visible logos."
+            },
+            {
+                title: "Architectural Drape & Ergonomic Cut:",
+                desc: "Instead of acting as a walking billboard, the garment flatters human anatomy with aligned seams and balanced weight distribution."
+            },
+            {
+                title: "Anti-Gimmick Material Integrity:",
+                desc: "Eliminates temporary silicone washes and chemical resin coatings in favor of genuine compact cotton and high-tenacity polyamide."
+            },
+            {
+                title: "Multi-Year Wardrobe Longevity:",
+                desc: "Reinforced flatlock seams, color-fastness treatments, and anti-pilling finishes ensure the garment remains identical after dozens of washes."
+            }
+        ];
+
+        function selectPsych(index) {
+            for (let i = 0; i < 4; i++) {
+                const el = document.getElementById('psych-' + i);
+                if (i === index) {
+                    el.className = "p-5 rounded-2xl bg-darkCard border-2 border-bronze shadow-md cursor-pointer transition-all";
+                } else {
+                    el.className = "p-5 rounded-2xl bg-darkCard border border-zinc-700 hover:border-bronze cursor-pointer transition-all";
+                }
+            }
+            document.getElementById('callout-title').textContent = psychData[index].title;
+            document.getElementById('callout-desc').textContent = psychData[index].desc;
+        }
+
+        function setGarment(type) {
+            currentGarment = type;
+            const types = ['hoodie', 'tshirt', 'leggings', 'bra'];
+            const titles = {
+                hoodie: 'Heavyweight Compact Hoodie',
+                tshirt: 'Long-Staple Compact Tee',
+                leggings: 'High-Tenacity Sculpt Leggings',
+                bra: 'Ergonomic Technical Sports Bra'
+            };
+            types.forEach(t => {
+                const btn = document.getElementById('btn-' + t);
+                btn.className = (t === type)
+                    ? "px-3 py-1.5 rounded-lg bg-bronze text-zinc-950 font-semibold transition-all"
+                    : "px-3 py-1.5 rounded-lg text-zinc-300 hover:text-white transition-all";
+            });
+            document.getElementById('garment-title').textContent = titles[type];
+            renderGarmentSVG();
+        }
+
+        function toggleLogoMode(mode) {
+            currentLogoMode = mode;
+            document.getElementById('mode-quiet').className = (mode === 'quiet')
+                ? "px-3 py-1 rounded-lg text-xs font-semibold bg-emerald-700 text-white"
+                : "px-3 py-1 rounded-lg text-xs font-semibold bg-zinc-800 text-zinc-300 border border-zinc-700";
+            document.getElementById('mode-loud').className = (mode === 'loud')
+                ? "px-3 py-1 rounded-lg text-xs font-semibold bg-red-700 text-white"
+                : "px-3 py-1 rounded-lg text-xs font-semibold bg-zinc-800 text-zinc-300 border border-zinc-700";
+            renderGarmentSVG();
+        }
+
+        function renderGarmentSVG() {
+            const svg = document.getElementById('garment-svg');
+            let shape = '';
+            let logoOverlay = '';
+
+            if (currentGarment === 'hoodie') {
+                shape = `
+                    <path d="M85,35 C105,15 195,15 215,35 L255,85 L225,110 L205,75 L205,230 L95,230 L95,75 L75,110 L45,85 Z" fill="#232220" stroke="#C5A880" stroke-width="2"/>
+                    <path d="M115,35 C130,55 170,55 185,35" fill="none" stroke="#C5A880" stroke-width="2"/>
+                    <rect x="115" y="165" width="70" height="40" rx="6" fill="#2C2B29" stroke="#52504C" stroke-width="1.5"/>
+                `;
+                logoOverlay = currentLogoMode === 'quiet'
+                    ? `<rect x="172" y="88" width="16" height="5" rx="1.5" fill="#2E2D2A" stroke="#524F4A" stroke-width="0.8"/><circle cx="180" cy="90" r="8" fill="none" stroke="#C5A880" stroke-width="1" class="animate-pulse-slow"/>`
+                    : `<rect x="110" y="82" width="80" height="34" rx="3" fill="#F5F5F4"/><text x="150" y="104" text-anchor="middle" fill="#9E3B33" font-size="13" font-weight="800" font-family="sans-serif">MEGA LOGO</text>`;
+            } else if (currentGarment === 'tshirt') {
+                shape = `
+                    <path d="M80,40 L115,28 C135,42 165,42 185,28 L220,40 L255,85 L225,108 L205,78 L205,230 L95,230 L95,78 L75,108 L45,85 Z" fill="#232220" stroke="#C5A880" stroke-width="2"/>
+                `;
+                logoOverlay = currentLogoMode === 'quiet'
+                    ? `<rect x="170" y="195" width="18" height="5" rx="1.5" fill="#2E2D2A" stroke="#524F4A" stroke-width="0.8"/><circle cx="179" cy="197" r="8" fill="none" stroke="#C5A880" stroke-width="1" class="animate-pulse-slow"/>`
+                    : `<rect x="108" y="82" width="84" height="40" rx="3" fill="#F5F5F4"/><text x="150" y="107" text-anchor="middle" fill="#9E3B33" font-size="13" font-weight="800" font-family="sans-serif">HYPE BRAND</text>`;
+            } else if (currentGarment === 'leggings') {
+                shape = `
+                    <path d="M100,25 L200,25 L215,110 L195,235 L162,235 L150,115 L138,235 L105,235 L85,110 Z" fill="#232220" stroke="#C5A880" stroke-width="2"/>
+                    <line x1="102" y1="52" x2="198" y2="52" stroke="#C5A880" stroke-width="1.5"/>
+                `;
+                logoOverlay = currentLogoMode === 'quiet'
+                    ? `<rect x="143" y="36" width="14" height="4" rx="1" fill="#33322F"/><circle cx="150" cy="38" r="7" fill="none" stroke="#C5A880" stroke-width="1" class="animate-pulse-slow"/>`
+                    : `<text x="188" y="165" text-anchor="middle" transform="rotate(82 188 165)" fill="#F5F5F4" font-size="12" font-weight="800" font-family="sans-serif">LOUD SPORT</text>`;
+            } else {
+                shape = `
+                    <path d="M105,35 L125,35 L135,75 L165,75 L175,35 L195,35 L210,115 L205,165 L95,165 L90,115 Z" fill="#232220" stroke="#C5A880" stroke-width="2"/>
+                    <rect x="95" y="150" width="110" height="16" rx="3" fill="#2E2D2A" stroke="#C5A880" stroke-width="1.5"/>
+                `;
+                logoOverlay = currentLogoMode === 'quiet'
+                    ? `<rect x="143" y="156" width="14" height="4" rx="1" fill="#3A3835"/><circle cx="150" cy="158" r="7" fill="none" stroke="#C5A880" stroke-width="1" class="animate-pulse-slow"/>`
+                    : `<rect x="105" y="151" width="90" height="14" fill="#F5F5F4"/><text x="150" y="162" text-anchor="middle" fill="#9E3B33" font-size="10" font-weight="800" font-family="sans-serif">BILLBOARD</text>`;
+            }
+
+            svg.innerHTML = shape + logoOverlay;
+        }
+
+        function setWashCycle(val) {
+            const slider = document.getElementById('wash-slider');
+            slider.value = val;
+            updateWashSimulation(val);
+        }
+
+        function updateWashSimulation(val) {
+            const w = parseInt(val, 10);
+            const t = w / 50; // Normalized degradation ratio (0.0 to 1.0)
+            const label = document.getElementById('wash-count-label');
+            label.textContent = w === 0 ? "0 Washes (New on Rack)" : `${w} Wash Cycles`;
+
+            // 1. Quiet Luxury Telemetry (Remains Highly Stable)
+            const qlShrink = (w * 0.02).toFixed(1);
+            document.getElementById('ql-shrink').textContent = `-${qlShrink}%`;
+            document.getElementById('ql-pill').textContent = w < 35 ? "Grade 5 (None)" : "Grade 4.5 (Minimal)";
+            document.getElementById('ql-color').textContent = "Zero Bleed";
+            document.getElementById('ql-seam').textContent = "100% Intact";
+            document.getElementById('ql-status-badge').textContent = `Dimensional Stability: ${(100 - w * 0.02).toFixed(1)}%`;
+
+            // 2. Fast-Fashion Realistic Physical Geometry Deformation
+            // Calculate progressive vertical shrinkage, collar sag ("bacon neck"), asymmetric spirality (torque), and roping hem
+            const neckSag = (t * 14).toFixed(1);
+            const leftHemY = (195 - t * 22).toFixed(1);
+            const rightHemY = (195 - t * 14).toFixed(1);
+            const leftHemX = (70 - t * 6).toFixed(1);
+            const rightHemX = (170 + t * 14).toFixed(1);
+            const waveAmp = (t * 7).toFixed(1);
+
+            const dynamicShirtPath = `
+                M ${(60 - t * 3).toFixed(1)},${(30 + t * 5).toFixed(1)}
+                L ${(90 - t * 3).toFixed(1)},${(20 + t * 3).toFixed(1)}
+                C ${(105 - t * 2).toFixed(1)},${(32 + parseFloat(neckSag)).toFixed(1)}
+                  ${(135 + t * 4).toFixed(1)},${(32 + parseFloat(neckSag) * 1.15).toFixed(1)}
+                  ${(150 + t * 3).toFixed(1)},${(20 + t * 4).toFixed(1)}
+                L ${(180 + t * 4).toFixed(1)},${(30 + t * 6).toFixed(1)}
+                L ${(210 + t * 5).toFixed(1)},${(70 + t * 8).toFixed(1)}
+                L ${(185 + t * 2).toFixed(1)},${(90 + t * 5).toFixed(1)}
+                L ${(170 - t * 3).toFixed(1)},${(65 + t * 5).toFixed(1)}
+                Q ${(166 + t * 8).toFixed(1)},130 ${rightHemX},${rightHemY}
+                C 150,${(parseFloat(rightHemY) + parseFloat(waveAmp)).toFixed(1)}
+                  130,${(parseFloat(leftHemY) - parseFloat(waveAmp)).toFixed(1)}
+                  115,${(parseFloat(leftHemY) + parseFloat(waveAmp)).toFixed(1)}
+                C 95,${(parseFloat(leftHemY) - parseFloat(waveAmp)).toFixed(1)}
+                  82,${(parseFloat(leftHemY) + parseFloat(waveAmp) * 0.7).toFixed(1)}
+                  ${leftHemX},${leftHemY}
+                Q ${(68 - t * 7).toFixed(1)},128 ${(70 + t * 3).toFixed(1)},${(65 + t * 4).toFixed(1)}
+                L ${(55 - t * 4).toFixed(1)},${(90 + t * 6).toFixed(1)}
+                L ${(30 - t * 4).toFixed(1)},${(70 + t * 4).toFixed(1)}
+                Z
+            `;
+
+            const shirtPath = document.getElementById('ff-shirt-path');
+            shirtPath.setAttribute('d', dynamicShirtPath);
+
+            // Progressive Dye Wash-Out (Color Fading from #2A2927 to dull washed-out slate gray)
+            const r = Math.round(42 + t * 30);
+            const g = Math.round(41 + t * 28);
+            const b = Math.round(39 + t * 27);
+            shirtPath.setAttribute('fill', `rgb(${r}, ${g}, ${b})`);
+
+            // Surface Edge Fuzz & Distortion via SVG Turbulence Filter
+            const disp = document.getElementById('ff-displacement');
+            disp.setAttribute('scale', (t * 3.4).toFixed(2));
+
+            // Wavy "Bacon Neck" Collar Ribbing
+            const collarRib = document.getElementById('ff-collar-rib');
+            if (w >= 5) {
+                collarRib.setAttribute('d', `M88,23 Q102,${(35 + t * 14).toFixed(1)} 118,${(31 + t * 10).toFixed(1)} T152,24`);
+                collarRib.setAttribute('stroke', '#A8A29E');
+            } else {
+                collarRib.setAttribute('d', `M88,21 C105,34 135,34 152,21`);
+                collarRib.setAttribute('stroke', '#78716C');
+            }
+
+            // Twisted Side Seam Torque Lines
+            const seamLeft = document.getElementById('ff-twisted-seam-left');
+            const seamRight = document.getElementById('ff-twisted-seam-right');
+            const seamOpacity = Math.min(0.95, Math.max(0, (w - 4) / 20));
+            seamLeft.setAttribute('opacity', seamOpacity.toFixed(2));
+            seamRight.setAttribute('opacity', seamOpacity.toFixed(2));
+            seamLeft.setAttribute('d', `M70,68 Q${(75 + t * 22).toFixed(1)},130 ${(parseFloat(leftHemX) + t * 28).toFixed(1)},${leftHemY}`);
+            seamRight.setAttribute('d', `M170,68 Q${(162 - t * 18).toFixed(1)},130 ${(parseFloat(rightHemX) - t * 22).toFixed(1)},${rightHemY}`);
+
+            // Abrasion Patches & Pilling Visibility
+            const abrasion = document.getElementById('ff-abrasion-patches');
+            abrasion.setAttribute('opacity', Math.min(1, w / 22).toFixed(2));
+
+            const pillOpacity = Math.min(1, w / 16);
+            document.getElementById('ff-pills').setAttribute('opacity', pillOpacity.toFixed(2));
+
+            // Print Cracking, Skewing & Dye Migration Bleed
+            const printGroup = document.getElementById('ff-print-group');
+            const printBox = document.getElementById('ff-print-box');
+            const cracksNet = document.getElementById('ff-cracks-network');
+            const bleedHalo = document.getElementById('ff-bleed-halo');
+
+            printGroup.setAttribute('transform', `translate(0, ${(t * 5).toFixed(1)}) skewX(${(t * 9).toFixed(1)}) rotate(${(t * 2.5).toFixed(1)} 120 80)`);
+
+            if (w >= 4) {
+                // Dye migration turns white plastisol print into muddy gray-brown
+                const pr = Math.round(231 - t * 85);
+                const pg = Math.round(229 - t * 88);
+                const pb = Math.round(228 - t * 92);
+                printBox.setAttribute('fill', `rgb(${pr}, ${pg}, ${pb})`);
+                bleedHalo.setAttribute('opacity', Math.min(0.95, (w - 3) / 18).toFixed(2));
+                cracksNet.setAttribute('opacity', Math.min(1, (w - 3) / 14).toFixed(2));
+            } else {
+                printBox.setAttribute('fill', '#E7E5E4');
+                bleedHalo.setAttribute('opacity', '0');
+                cracksNet.setAttribute('opacity', '0');
+            }
+
+            // Seam Popping & Unraveling Loose Threads
+            const looseThreads = document.getElementById('ff-loose-threads');
+            if (w >= 12) {
+                shirtPath.setAttribute('stroke-dasharray', '6,3,2,3');
+                shirtPath.setAttribute('stroke', '#E15A51');
+                looseThreads.setAttribute('opacity', Math.min(1, (w - 10) / 15).toFixed(2));
+            } else {
+                shirtPath.setAttribute('stroke-dasharray', '0');
+                shirtPath.setAttribute('stroke', '#78716C');
+                looseThreads.setAttribute('opacity', '0');
+            }
+
+            // Telemetry Calculations
+            const ffShrink = (w * 0.38).toFixed(1);
+            const torqueDeg = (w * 0.22).toFixed(1);
+            document.getElementById('ff-shrink').textContent = w === 0 ? "0.0%" : `-${ffShrink}% / ${torqueDeg}°`;
+            document.getElementById('ff-pill').textContent = w === 0 ? "Grade 5" : (w < 8 ? "Grade 3 (Moderate)" : "Grade 1 (Severe)");
+            document.getElementById('ff-color').textContent = w < 4 ? "None" : (w < 12 ? "Dye Bleed" : "Cracked & Bled");
+            document.getElementById('ff-seam').textContent = w < 10 ? "Intact" : (w < 20 ? "Puckering" : "Seam Popping");
+            document.getElementById('ff-status-badge').textContent = w === 0
+                ? "Dimensional Stability: 100% (Unwashed)"
+                : `Dimensional Stability: ${Math.max(62, (100 - w * 0.75)).toFixed(0)}%`;
+
+            const banner = document.getElementById('ff-warning-banner');
+            if (w === 0) {
+                banner.textContent = "Resin Coating Intact • Mimics Luxury Hand-Feel on Rack";
+                banner.className = "absolute bottom-3 left-3 right-3 text-[11px] font-mono text-zinc-200 bg-zinc-900/95 border border-zinc-700 px-2.5 py-1 rounded truncate";
+            } else if (w < 10) {
+                banner.textContent = "Resin Washed Out • Short-Staple Pilling & Torque Initiated";
+                banner.className = "absolute bottom-3 left-3 right-3 text-[11px] font-mono text-amber-300 bg-zinc-900/95 border border-amber-500/40 px-2.5 py-1 rounded truncate";
+            } else {
+                banner.textContent = "Critical Failure: Torque Twist, Dye Migration & Seam Rupture";
+                banner.className = "absolute bottom-3 left-3 right-3 text-[11px] font-mono text-red-300 bg-zinc-900/95 border border-red-500/40 px-2.5 py-1 rounded truncate";
+            }
+        }
+
+        function calculateEPR() {
+            const units = parseInt(document.getElementById('epr-units').value, 10);
+            document.getElementById('epr-units-display').textContent = units.toLocaleString() + " Units";
+            const malusPerUnit = 6; // Avg EU Eco-modulation penalty + waste fee in EUR
+            const totalPenalty = units * malusPerUnit;
+            document.getElementById('epr-malus-total').textContent = "€" + totalPenalty.toLocaleString();
+            document.getElementById('epr-savings').textContent = "€" + totalPenalty.toLocaleString() + " / Collection";
+        }
+
+        window.onload = function () {
+            renderGarmentSVG();
+            updateWashSimulation(29);
+            calculateEPR();
+        };
+    </script>
+</body>
+</html>
